@@ -1,0 +1,38 @@
+Title - Student Management System (Todo List)
+
+Features -> 
+    1) User should create account
+    2) User can login
+    3) User can forget his password
+    4) Types of users -
+        a) Admin -> he can approve new user created and also can delete his account
+        b) User -> account create apna or he can add todo list and update
+    4) todo list page
+    5) Todo list can be share with multiple person wale
+    6) Admin table -> list user data and who se who user delete or block the user
+
+Tech Stack - 
+    1) Html
+    2) Css
+    3) Bootstrap
+    4) JS
+    5) Mongodb (database)
+
+Collection ->
+    1) users []
+    2) todo []
+
+    A) User's {} (object)
+        i) Name
+        ii) Email
+        iii) Password
+        iv) type [admin, user]
+
+    B) Todo's {} (object)
+        i) Who created
+        ii) Participant list
+        iii) todo item []
+            a) item name
+            b) who created the task
+            c) who has done this task
+            d) date and time
