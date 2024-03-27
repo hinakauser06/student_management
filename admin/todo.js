@@ -6,7 +6,7 @@
           name: "Mahesh Gaikwad",
           email: "mahesh@gmail.com",
           password: "123",
-          isBlocked: false,
+          isBlocked: true,
         },
         {
           id: 1,
@@ -27,17 +27,16 @@
       //   [todo]-> fix this issue need to show all the data in array
       //   [todo]-> show block or unblock btn using array data
       userArray.forEach((data) => {
-        const newRow= document.createElement('tr');
-        newRow.innerHTML = `
+        // const newRow= document.createElement('tr');
+        tableBody.innerHTML += `
             <tr>
-                <th scope="row">${data.id}</th>
-                <td>${data.name}</td>
+                <th>${data.id}</th>
+                <td scope="row">${data.name}</td>
                 <td>${data.email}</td>
                 <td>${data.password}</td>
                 <td>
-                <button id="myButton" type="button" class="btn btn-warning btn-sm">
-                 Unblocked
-                </button>
+                ${data.isBlocked ? '<button type="button" class="btn btn-success btn-sm">Blocked</button>' : '<button type="button" class="btn btn-warning btn-sm">Unblocked</button>'}
+                
                 </td>
                 <td>
                 <button type="button" class="btn btn-danger btn-sm">
@@ -45,10 +44,9 @@
                 </button>
                 </td>
                 <td>
-                
-            </tr>
+                </tr>
             `;
-            tableBody.appendChild(newRow); 
+            // tableBody.appendChild(newRow); 
             
 
 

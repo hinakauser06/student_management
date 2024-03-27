@@ -1,0 +1,18 @@
+.signin{
+    text-align:center;
+
+    
+}
+h1{
+    color: blue;
+}
+body{
+    margin: 200px 500px 200px 500px;
+    padding: 20px;
+    border: 2px solid green;
+    
+}
+td{
+    border: 2px solid black;
+    
+}
