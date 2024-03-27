@@ -12,7 +12,7 @@ Features ->
     6) Admin table -> list user data and who se who user delete or block the user
 
 Tech Stack - 
-    1) Html
+    1) Html updated
     2) Css
     3) Bootstrap
     4) JS
